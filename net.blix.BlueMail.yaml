@@ -20,7 +20,8 @@ modules:
   - name: squashfs
     buildsystem: simple
     build-commands:
-      - make XZ_SUPPORT=1 INSTALL_PREFIX=${FLATPAK_DEST} -C squashfs-tools -j ${FLATPAK_BUILDER_N_JOBS} install
+      - make XZ_SUPPORT=1 INSTALL_PREFIX=${FLATPAK_DEST} -C squashfs-tools -j ${FLATPAK_BUILDER_N_JOBS}
+        install
     sources:
       - type: git
         url: https://github.com/plougher/squashfs-tools.git
@@ -50,9 +51,9 @@ modules:
       - type: extra-data
         filename: BlueMail.snap
         only-arches: [x86_64]
-        url: https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_139.snap
-        sha256: 0ea5394c193226a1a1e249eb8139924d64817377b233655a19b51c1a0827caa1
-        size: 92389376
+        url: https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_140.snap
+        sha256: 0f7941d3f22d212fd45d54214dfb9bf49ffc7668b8cfeef8ec0e47b71f8dfcd5
+        size: 92577792
         x-checker-data:
           type: snapcraft
           name: bluemail
