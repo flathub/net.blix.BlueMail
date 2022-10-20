@@ -9,4 +9,4 @@ fi
 
 # --no-sandbox is needed until BlueMail updates their base electron version to a version that is
 # compatible with Freedesktop 22.08
-exec /app/bin/zypak-wrapper.sh /app/extra/BlueMail/bluemail --no-sandbox "$@"
+exec /app/bin/zypak-wrapper.sh /app/extra/BlueMail/bluemail --disable-gpu-sandbox "$@"
