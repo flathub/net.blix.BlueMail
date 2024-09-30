@@ -4,7 +4,9 @@
   <metadata_license>MIT</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <name>BlueMail</name>
-  <developer_name>Blix Inc.</developer_name>
+  <developer id="net.blix">
+      <name>Blix Inc.</name>
+  </developer>
   <url type="homepage">https://bluemail.me</url>
   <summary>BlueMail Email and Calendar App</summary>
   <description>
