@@ -1,12 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -e
-shopt -s nullglob
+export TMPDIR="$XDG_RUNTIME_DIR/app/${FLATPAK_ID:-net.blix.BlueMail}"
 
-if [ ! -e /etc/shells ] && [ -e /var/run/host/etc/shells ]; then
-  ln -s /var/run/host/etc/shells /etc/shells
+declare -a FLAGS=()
+
+if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+    if [[ -c /dev/nvidia0 ]]; then
+        echo "Using NVIDIA on Wayland, disabling gpu sandbox"
+        FLAGS+=(--disable-gpu-sandbox)
+    fi
+
+    WAYLAND_SOCKET=${WAYLAND_DISPLAY:-"wayland-0"}
+    if [[ "${WAYLAND_SOCKET:0:1}" != "/" ]]; then
+        WAYLAND_SOCKET="$XDG_RUNTIME_DIR/$WAYLAND_SOCKET"
+    fi
+
+    # https://help.airtame.com/hc/en-us/articles/5308029216157-Install-the-Airtame-app-on-Linux
+    if [[ -e "$WAYLAND_SOCKET" ]]; then
+        echo "Wayland socket is available, running natively on Wayland."
+        echo "To disable, remove the --socket=wayland permission."
+        FLAGS+=(--ozone-platform-hint=auto --enable-features=WebRTCPipeWireCapturer)
+    fi
 fi
 
-# --no-sandbox is needed until BlueMail updates their base electron version to a version that is
-# compatible with Freedesktop 22.08
-exec /app/bin/zypak-wrapper.sh /app/extra/BlueMail/bluemail --no-sandbox "$@"
+echo "Passing the following arguments to Electron:" "${FLAGS[@]}"
+exec /app/bin/zypak-wrapper.sh /app/extra/BlueMail/bluemail "${FLAGS[@]}" "$@"
