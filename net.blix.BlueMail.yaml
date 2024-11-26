@@ -1,4 +1,5 @@
 app-id: net.blix.BlueMail
+appstream-compose: false
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
@@ -52,13 +53,13 @@ modules:
       - type: extra-data
         filename: BlueMail.snap
         only-arches: [x86_64]
-        url: https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_170.snap
-        sha256: 189c7183325d9dd940e2f3ecc2456053ddc1e2142ad86f0ac27a7500bd536889
-        size: 97800192
+        url: https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_173.snap
+        sha256: eb0a24be79a98ff430dceed16ebf2676af34b44e3b2d0af09bc66ece29c6f0a6
+        size: 168423424
         x-checker-data:
           type: snapcraft
           name: bluemail
-          channel: stable
+          channel: candidate
       - type: file
         path: bluemail.sh
       - type: file

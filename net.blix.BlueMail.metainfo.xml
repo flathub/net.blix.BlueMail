@@ -8,15 +8,31 @@
       <name>Blix Inc.</name>
   </developer>
   <url type="homepage">https://bluemail.me</url>
-  <summary>BlueMail Email and Calendar App</summary>
+  <summary>BlueMail is a free, secure, universal email app, capable of managing an unlimited number of mail accounts</summary>
   <description>
-    <p>BlueMail by Blix is a free, beautifully designed, universal email app, capable of managing an unlimited number of mail accounts from various providers, allowing for smart push notifications and group emailing while enabling personalization across multiple email accounts. The BlueMail app connects directly to your mail server and is the perfect replacement for your stock email app.</p>
-    <p>NOTE: This package is not verified by, affiliated with, or supported by Blix Inc.</p>
+      <p>BlueMail for Linux will make you love email again.</p>
+      <p>BlueMail is a secure, fast, beautifully designed, powerful and easy to use email app which is capable of handling an unlimited number of email accounts from any email provider. It follows the great success of BlueMail on other platforms.</p>
+      <p>BlueMail allows you to add any account and supports all email protocols including IMAP, SMTP, Exchange ActiveSync, EWS and POP3.</p>
+      <p>BlueMail will connect directly to your mail server provider without the need for an email proxy. This enables direct connectivity to Gmail, Outlook, Office365, Yahoo, Exchange, Hotmail, AOL, iCloud and other private mail server configurations.</p>
+      <p>Your emails always stay with you, and you’ll never have an account missing as BlueMail's smart configuration adds any account with ease.</p>
+      <p>With unified folders, people-centric filters, sharing emails, clusters, and a truly remarkable user interface and experience, BlueMail is the ultimate mail app for your Linux machine.</p>
+      <p>Blue Mail uses leading industry protocols to secure and protect your data, and is constantly updated to provide the best experience, additional features, bug fixes and enhancements, so be sure to run the latest updates.</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://www.bluemail.me/img/desktop/Bluemail-Linux-Application.png</image>
-      <caption>BlueMail for Linux</caption>
+        <image>https://dashboard.snapcraft.io/site_media/appmedia/2022/06/image_2022-06-17_19-01-54.png</image>
+    </screenshot>
+    <screenshot>
+        <image>https://dashboard.snapcraft.io/site_media/appmedia/2022/06/image_2022-06-17_19-01-54_1.png</image>
+    </screenshot>
+    <screenshot>
+        <image>https://dashboard.snapcraft.io/site_media/appmedia/2022/06/image_2022-06-17_19-01-54_2.png</image>
+    </screenshot>
+    <screenshot>
+        <image>https://dashboard.snapcraft.io/site_media/appmedia/2022/06/image_2022-06-17_19-01-55.png</image>
+    </screenshot>
+    <screenshot>
+        <image>https://dashboard.snapcraft.io/site_media/appmedia/2022/06/image_2022-06-17_19-01-55_1.png</image>
     </screenshot>
   </screenshots>
   <launchable type="desktop-id">net.blix.BlueMail.desktop</launchable>
@@ -24,6 +40,7 @@
     <content_attribute id="social-info">moderate</content_attribute>
   </content_rating>
   <releases>
+    <release version="1.140.56" date="2024-11-22"/>
     <release version="1.140.34" date="2024-06-03">
       <description></description>
     </release>

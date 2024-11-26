@@ -15,11 +15,10 @@ if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
         WAYLAND_SOCKET="$XDG_RUNTIME_DIR/$WAYLAND_SOCKET"
     fi
 
-    # https://help.airtame.com/hc/en-us/articles/5308029216157-Install-the-Airtame-app-on-Linux
     if [[ -e "$WAYLAND_SOCKET" ]]; then
         echo "Wayland socket is available, running natively on Wayland."
         echo "To disable, remove the --socket=wayland permission."
-        FLAGS+=(--ozone-platform-hint=auto --enable-features=WebRTCPipeWireCapturer)
+        FLAGS+=(--enable-features=UseOzonePlatform --ozone-platform=wayland)
     fi
 fi
 
