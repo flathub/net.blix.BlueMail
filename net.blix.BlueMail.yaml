@@ -1,5 +1,4 @@
 app-id: net.blix.BlueMail
-appstream-compose: false
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
@@ -59,7 +58,7 @@ modules:
         x-checker-data:
           type: snapcraft
           name: bluemail
-          channel: candidate
+          channel: stable
       - type: file
         path: bluemail.sh
       - type: file
