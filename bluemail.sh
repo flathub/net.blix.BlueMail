@@ -18,7 +18,7 @@ if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
     if [[ -e "$WAYLAND_SOCKET" ]]; then
         echo "Wayland socket is available, running natively on Wayland."
         echo "To disable, remove the --socket=wayland permission."
-        FLAGS+=(--enable-features=UseOzonePlatform --ozone-platform=wayland)
+        FLAGS+=(--enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland)
     fi
 fi
 
