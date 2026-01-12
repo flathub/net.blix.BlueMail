@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>net.blix.BlueMail</id>
   <metadata_license>MIT</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
@@ -10,6 +10,7 @@
   <url type="homepage">https://bluemail.me</url>
   <summary>BlueMail is a free, secure, universal email app, capable of managing an unlimited number of mail accounts</summary>
   <description>
+      <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by Blix Inc.**</p>
       <p>BlueMail for Linux will make you love email again.</p>
       <p>BlueMail is a secure, fast, beautifully designed, powerful and easy to use email app which is capable of handling an unlimited number of email accounts from any email provider. It follows the great success of BlueMail on other platforms.</p>
       <p>BlueMail allows you to add any account and supports all email protocols including IMAP, SMTP, Exchange ActiveSync, EWS and POP3.</p>
@@ -40,23 +41,12 @@
     <content_attribute id="social-info">moderate</content_attribute>
   </content_rating>
   <releases>
-    <release version="1.140.107" date="2025-11-07">
-      <description></description>
-    </release>
-    <release version="1.140.100" date="2025-07-30">
-      <description/>
-    </release>
-    <release version="1.140.98" date="2025-07-17">
-      <description/>
-    </release>
+    <release version="1.140.100" date="2025-07-30"/>
+    <release version="1.140.98" date="2025-07-17"/>
     <release version="1.140.82" date="2025-03-07"/>
     <release version="1.140.56" date="2024-11-22"/>
-    <release version="1.140.34" date="2024-06-03">
-      <description/>
-    </release>
-    <release version="1.140.14" date="2024-02-14">
-      <description/>
-    </release>
+    <release version="1.140.34" date="2024-06-03"/>
+    <release version="1.140.14" date="2024-02-14"/>
     <release version="1.137.2" date="2023-07-06"/>
     <release version="1.136.20" date="2023-04-13"/>
     <release version="1.136.8" date="2023-04-05"/>
