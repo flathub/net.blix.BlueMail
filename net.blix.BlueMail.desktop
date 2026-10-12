@@ -1,11 +1,11 @@
 [Desktop Entry]
 Version=1.0
 Name=BlueMail
-Exec=bluemail %F
+Exec=bluemail %U
 Terminal=false
 Type=Application
 Icon=net.blix.BlueMail
 StartupWMClass=BlueMail
 Comment=BlueMail email client
-MimeType=x-scheme-handler/me.blueone.linux;x-scheme-handler/mailto;x-scheme-handler/me.blueone.linux;
+MimeType=x-scheme-handler/me.blueone.linux;x-scheme-handler/mailto;
 Categories=Office;
