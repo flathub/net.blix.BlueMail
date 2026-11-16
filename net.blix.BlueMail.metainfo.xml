@@ -2,7 +2,7 @@
 <component type="desktop-application">
   <id>net.blix.BlueMail</id>
   <metadata_license>MIT</metadata_license>
-  <project_license>LicenseRef-proprietary</project_license>
+  <project_license>LicenseRef-proprietary=https://bluemail.me/tos/</project_license>
   <name>BlueMail</name>
   <developer id="net.blix">
       <name>Blix Inc.</name>
