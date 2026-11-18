@@ -54,9 +54,9 @@ modules:
         filename: BlueMail.snap
         only-arches: [x86_64]
         url: 
-          https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_219.snap
-        sha256: c03738190fa8453fd4c96468a1fb0191b9801659c64a6121e5c7da755fa047af
-        size: 217329664
+          https://api.snapcraft.io/api/v1/snaps/download/ZVlj0qw0GOFd5JgTfL8kk2Y5eIG1IpiH_220.snap
+        sha256: ebf04ea734e8f3d0e787b9b470100b6c3e42447c867c6a117f7aa62b65fd67d5
+        size: 217403392
         x-checker-data:
           type: snapcraft
           name: bluemail
